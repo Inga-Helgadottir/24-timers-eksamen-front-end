@@ -19,14 +19,15 @@ const DeletePlayer = () => {
     });
 
     const data = await res.json();
-    if (data.code === 500) {
+    if (data.code !== 200 || data.code !== 204) {
       alert("there was an error");
     } else {
-      alert("You have changed this users role");
+      alert("you have deleted the user with the id" + id);
     }
     document.querySelector(".loading").style.display = "none";
     return data;
   };
+
   const onSubmit = (e) => {
     e.preventDefault();
     if (id === "") {
@@ -37,12 +38,12 @@ const DeletePlayer = () => {
     deleteUserfunc({ id });
 
     setId("");
-    alert("you have deleted the user with the id" + id);
   };
+
   return (
     <form onSubmit={onSubmit}>
       <LoadingIcons.ThreeDots className="loading" />
-      <h2>Delete a user by id</h2>
+      <h2>Delete a player by id</h2>
       <div className="form-control">
         <label>id</label>
 
