@@ -60,6 +60,14 @@ function App() {
       window.location.reload();
     }
   };
+  const logOutFunc = async () => {
+    setLoggedIn(false);
+    setUserName("");
+    setUserRole("");
+    setCallLinkCheck(false);
+    localStorage.clear();
+    window.location.href = "/";
+  };
 
   return (
     <div className="App">
@@ -105,6 +113,12 @@ function App() {
       )}
       <Outlet />
       {!loggedIn && <LogIn onAdd={logInFunc} />}
+      {loggedIn && (
+        <div>
+          <hr id="logOutScroll" />
+          <LogOut onClick={logOutFunc} />
+        </div>
+      )}
     </div>
   );
 }
