@@ -1,5 +1,7 @@
 import Header from "./components/Header";
 import LogIn from "./components/LogIn";
+import LogOut from "./components/LogOut";
+
 import "./styles/App.css";
 import "./styles/nav.css";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
