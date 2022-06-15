@@ -1,13 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import LoadingIcons from "react-loading-icons";
 import { deletePlayerUrl } from "../settings";
 
 const DeletePlayer = () => {
   const [id, setId] = useState("");
 
   const deleteUserfunc = async (id) => {
-    document.querySelector(".loading").style.display = "block";
     let token = localStorage.getItem("token");
     const res = await fetch(deletePlayerUrl + id, {
       method: "DELETE",
@@ -42,8 +40,8 @@ const DeletePlayer = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <LoadingIcons.ThreeDots className="loading" />
       <h2>Delete a player by id</h2>
+      <p>The endpoint for this function does not work</p>
       <div className="form-control">
         <label>id</label>
 

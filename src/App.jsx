@@ -66,7 +66,6 @@ function App() {
     setLoggedIn(false);
     setUserName("");
     setUserRole("");
-    setCallLinkCheck(false);
     localStorage.clear();
     window.location.href = "/";
   };

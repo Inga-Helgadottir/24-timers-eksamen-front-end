@@ -6,7 +6,6 @@ import Match from "./Match";
 
 const SeeAllMatches = () => {
   const [matches, setMatches] = useState([]);
-  const [error, setError] = useState(false);
 
   useEffect(() => {
     const getMatches = async () => {
