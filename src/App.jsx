@@ -42,7 +42,6 @@ function App() {
       alert(data.message);
       setLoggedIn(false);
     }
-    console.log(data);
 
     if (
       data.username !== null &&
@@ -62,6 +61,7 @@ function App() {
       window.location.reload();
     }
   };
+
   const logOutFunc = async () => {
     setLoggedIn(false);
     setUserName("");
@@ -73,6 +73,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       {!dropDown && (
         <FaAngleDown
           className="dropDownIcon"

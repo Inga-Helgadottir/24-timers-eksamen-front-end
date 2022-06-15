@@ -4,4 +4,5 @@ export const seeAllMatches =
 export const loginUrl = "https://test.singah.dk/24TimersEksamen/api/login";
 //   "http://localhost:8080/devops_starter_war_exploded/api/login";
 export const deletePlayerUrl =
-  "http://localhost:8080/devops_starter_war_exploded/api/inf/deletePlayer/";
+  "https://test.singah.dk/24TimersEksamen/api/info/deletePlayer/";
+// "http://localhost:8080/devops_starter_war_exploded/api/info/deletePlayer/";

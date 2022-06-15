@@ -12,12 +12,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/" element={<App />}>
         <Route path="seeAllMatches" element={<SeeAllMatches />}></Route>
         <Route path="deleteUser" element={<DeletePlayer />}></Route>
-        {/* <Route path="seeCocktails" element={<Cocktails />}></Route>
-        <Route path="alcoholUnits" element={<AlcoholUnits />}></Route>
-        <Route path="makeCocktail" element={<MakeCocktails />}></Route>
-        <Route path="seeAllUsers" element={<SeeAllUsers />}></Route>
-        <Route path="changeUser" element={<ChangeUser />}></Route>
-        <Route path="changeUser/:id" element={<ChangeUser />}></Route> */}
       </Route>
       <Route
         // default for when the link is wrong
